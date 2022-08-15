@@ -1,0 +1,165 @@
+/*Universal css start here*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+/*Universal css  end here*/
+/*main css area  start here*/
+.main{
+    width: 100%;
+    height:100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/background-image.jpg);
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+nav{
+    width:80%;
+    padding:20px 0;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    height:80px;
+    align-items: center;
+}
+nav .brand-logo img{
+    max-width:100%;
+    width:130px;
+    background-color:white;
+    padding:10px 20px;
+    border-radius:9px;
+}
+.main .nav-link ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+    display:flex;
+}
+
+.main .nav-link ul li a{
+    display:inline-block;
+    margin:10px;
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    text-transform:capitalize;
+}
+.main .search-option input{
+    outline:none;
+    padding:10px;
+    background-color:transparent;
+    border:1px solid darkgoldenrod;
+}
+.main .search-option a{
+    text-decoration:none;
+    color:white;
+    background-color:darkgoldenrod;
+    padding:20px 20px;
+    margin-left:-5px;
+
+}
+::placeholder{
+    color:white;
+}
+.content{
+    width:80%;
+    margin:auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.row{
+    display:flex;
+    align-items: cemter;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.content-col{
+    flex-basis:44%;
+}
+.content-col h1{
+    font-size:3rem;
+    color:white;
+    text-transform: capitalize;
+}
+.content-col span{
+    color:darkgoldenrod;
+}
+.content-col p{
+    font-size:18px;
+    text-transform: capitalize;
+    line-height:1.4;
+    color:white;
+    font-family: sans-serif;
+    margin:30px 0;
+}
+.content-col .btn-hero{
+    text-decoration:none;
+    color:black;
+    background-color:darkgoldenrod;
+    border-radius:3px;
+    padding:10px 30px;
+    display: inline-block;
+    font-size:20px;
+    margin-top:30px;
+    text-transform:uppercase;
+    transition:0.3s all;
+}
+.content-col .btn-hero:hover{
+    transform: translateY(-10px);
+}
+.main-form{
+    background-color:black;
+    width:300px;
+    margin-left:auto;
+    padding:40px 20px;
+    border-radius:8px;
+}
+.main-form h2{
+    color:darkgoldenrod;
+    font-size:25px;
+    text-transform:capitalize;
+    text-align:center;
+    background-color:white;
+    padding:5px;
+    width:257px;
+    margin:auto;
+    border-radius:10px;
+}
+.main-form input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    background-color:transparent;
+    outline:none;
+    border:none;
+    border-bottom:1px solid red;
+}
+.main-form h3,h4,span{
+    color:white;
+    text-transform: capitalize;
+    font-weight:400;
+    margin:15px 0;
+}
+.main-form input[type="submit"]{
+    font-size:20px;
+    text-transform:capitalize;
+    background-color:darkgoldenrod;
+    border-radius:8px;
+    border:none;
+}
+
+@media(max-width:767px){
+    .row{
+        flex-direction:column;
+        align-items: center;
+    }
+    .content-col h1{
+        font-size:2rem;
+    }
+}
+/*main css area  end here*/
